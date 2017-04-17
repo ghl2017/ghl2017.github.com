@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>课堂工具</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+<link rel="stylesheet" href="files/sjdm.css" /> 
+<script type="text/javascript" src="files/data.js" ></script>
+<script type="text/javascript" src="files/sjdm.js" ></script>
+</head>
+<body onLoad="init()" >
+<div id="tab_content" >
+  <div id="indexdiv" >
+    <div id="top">课堂工具</div>
+    <table width="100%" cellspacing="2">
+      <tr>
+        <td width="30%" ><a href="#setdiv"> <div onClick="bj_menu()" id="dqbj">设置</div></a></td>
+        <td width="40%"><div   id="mtime" onClick="resettime()" align="center">时间</div></td>
+      <td width="30%"><a href="#dispdiv"><div align="center" onClick="xinxi(false)">查看</div></a></td>
+      </tr>
+    </table>
+      <div id="xsxm" onClick="dm()" class="yj"> 点名 </div>
+      <div id="dmdiv"></div>
+      <div id="bar"></div>
+      <div id="divBox" class="hideDlg" >
+        <table width="100%" style="height:100%; width: 100%;" id="table1">
+          <tr>
+              <td>
+                  <div class="wrapper">
+                      打分结果 
+                      <span id="result"></span>
+                      <ul id="star">
+                      <li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+                      <li>O</li>
+                      <li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+                      </ul>
+                  </div>  
+              </td>
+            </tr>                   
+        </table>
+      </div>
+  </div>
+
+  <div id="setdiv">
+    <table width="100%" cellspacing="2">
+      <tr>
+        <td width="30%" > </td>
+        <td width="40%"><a href="#indexdiv"><div   href="" align="center">点名</div></a></td>
+      <td width="30%"></td>
+      </tr>
+    </table>
+    <div  id="mybjxx"></div>
+    <div id="bjtree"></div>
+  </div>
+
+  <div id="dispdiv">
+      <table width="100%" cellspacing="2">
+      <tr>
+        <td width="30%" > </td>
+        <td width="40%"><a href="#indexdiv"><div   href="" align="center">点名</div></a></td>
+      <td width="30%"></td>
+      </tr>
+    </table>
+    <table width="100%" cellspacing="2">
+      <tr>
+        <td width="30%"   ><div id="txm" align="center"  onClick="xinxi(true)" >设置</div></td>
+        <td width="40%"><input type="text" id="xsin"  ></td>
+      <td width="30%"><div align="center"  onClick="addNewxs(xsin.value)" >添加</div></td>
+      </tr>
+    </table>
+    <div id="test">  </div>
+  </div>
+</div>
+</body>
+</html>
