@@ -1,0 +1,103 @@
+/* CSS Document */
+
+.yj{
+	text-align: center;
+	font-size: 3.5em;
+	padding: 5px;
+	margin: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+	box-shadow: 3px 3px 5px #888888;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+body {
+	margin:0; 
+	background-color: #CCCCCC;
+}
+
+#tab_content{width:100%; height:100%;position:fixed;overflow:hidden;}
+#setdiv,#indexdiv,#dispdiv{width:100%; height:100%;overflow-y:scroll;}
+
+.row{
+/*¶¨ÒåÃ¿ÐÐ*/
+width:100%;clear:both;
+}
+.lef_menu{
+/*¶¨Òå²Ëµ¥*/
+	width:60px;
+	height:24px;
+	line-height:24px;
+	background-color: #ACB9D1;
+	float:left;
+    margin:2px 1px;
+	font-size:12px;	
+	text-align:center;line-height:24px
+}
+
+.lef_menu_xz{
+/*¶¨Òå²Ëµ¥*/
+	width:60px;
+	height:24px;
+	line-height:24px;
+	background-color: #00B9D1;
+	float:left;
+    margin:2px 1px;
+	font-size:12px;	
+	text-align:center;line-height:24px
+}
+
+.lef_zc{
+/*¶¨Òå×ù´Î*/
+    width:38px;
+	height:24px;
+	line-height:24px;
+	background-color: #ACB9D1;
+	float:left;
+    margin:2px 1px;
+	font-size:10px;	
+	text-align:center;line-height:24px
+}
+    #star{overflow:hidden;}
+    #star li{float:left; width:20px; height:20px; margin:2px; display:inline; color:#999; font:bold 18px arial; cursor:pointer}
+    #star .act{color:#ff0000}
+    #star .act-{color:#00ff00}
+
+    .hideDlg
+    {
+        height:129px;width:368px;
+        display:none;
+    }
+    .showDlg
+    {
+        background-color:#ffffdd;
+        border-width:1px;
+        border-style:solid;        
+        position: absolute; 
+        display:block;
+        z-index:5;
+        position:fixed;
+        /*这里都是对外边距进行设置*/
+         margin:auto;
+         left:0;right:0;  top:0;  bottom:0;
+         /*设置div的宽和高*/
+         height:129px;width:368px;
+         设置超出范围后，就隐藏超出的部分
+         overflow: hidden;
+    }
+    .showDeck {
+        display:block;
+        top:0px;
+        left:0px;
+        margin:0px;
+        padding:0px;
+        width:100%;
+        height:100%;
+        position:absolute;
+        z-index:3;
+        background:#cccccc;
+    }
+    .hideDeck 
+    {
+        display:none;
+    }
